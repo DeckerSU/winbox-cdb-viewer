@@ -1,0 +1,22 @@
+Verification: 2026-10-03
+
+- Rust tests: 6 passed (5 decoder/export tests and 1 GUI state/rendering test).
+- cargo fmt --check passed.
+- Strict Clippy checks passed on Linux and Windows.
+- Linux Alpine/musl x86_64 and Windows MSVC x86_64 release builds succeeded.
+- Linux GUI launched under Xvfb, opened the synthetic plain address book,
+  and displayed English controls and account data.
+- Windows GUI launched on an interactive desktop; the application window
+  appeared and rendered its controls correctly.
+- The application icon is embedded in the GUI. Windows builds also embed
+  executable icon resources.
+- Test fixtures are synthetic and included in the project. The fixture
+  generator uses only the Python standard library.
+
+Limitations:
+- GUI startup checks do not cover every operating-system version or graphics
+  driver.
+- Native file dialogs were not exercised under Xvfb.
+- Alpine/musl builds require compatible system libraries and a working
+  graphics environment.
+- Verification used synthetic fixtures only.

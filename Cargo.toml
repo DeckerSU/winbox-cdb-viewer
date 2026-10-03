@@ -1,0 +1,42 @@
+[package]
+name = "winbox-cdb"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+description = "Local WinBox CDB account viewer and exporter"
+
+[features]
+default = ["gui"]
+gui = ["dep:eframe", "dep:egui_extras", "dep:rfd", "dep:dirs"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha1 = "0.10"
+zeroize = "1"
+egui_extras = { version = "0.36.2", optional = true }
+rfd = { version = "0.15.4", default-features = false, features = ["xdg-portal", "async-std"], optional = true }
+dirs = { version = "6", optional = true }
+
+[target.'cfg(windows)'.dependencies]
+eframe = { version = "0.36.2", default-features = false, features = ["default_fonts", "wgpu"], optional = true }
+
+[target.'cfg(not(windows))'.dependencies]
+eframe = { version = "0.36.2", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"], optional = true }
+
+[[bin]]
+name = "winbox-cdb"
+path = "src/main.rs"
+required-features = ["gui"]
+
+[[bin]]
+name = "cdb-dump"
+path = "src/bin/dump.rs"
+
+[profile.release]
+lto = "thin"
+strip = true
+
+[build-dependencies]
+image = { version = "0.25", default-features = false, features = ["png", "ico"] }
+winresource = "0.1"

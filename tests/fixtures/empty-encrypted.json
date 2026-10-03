@@ -1,0 +1,9 @@
+{
+  "format": "WinBox CDB",
+  "magic": "0x4011F00D",
+  "encryption": "rc4-drop768-sha1",
+  "authenticated": false,
+  "source_size": 40,
+  "record_count": 0,
+  "records": []
+}

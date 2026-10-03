@@ -1,0 +1,6 @@
+/target/
+*.cdb
+!tests/fixtures/*.cdb
+/.agents/
+/.aws/
+/.codex/

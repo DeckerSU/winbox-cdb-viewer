@@ -1,0 +1,301 @@
+{
+  "format": "WinBox CDB",
+  "magic": "0xC01DF00D",
+  "encryption": "none",
+  "authenticated": false,
+  "source_size": 419,
+  "record_count": 3,
+  "records": [
+    {
+      "index": 0,
+      "offset": 4,
+      "message_size": 401,
+      "fields": [
+        {
+          "id": "0x000001",
+          "name": "address",
+          "type": "string",
+          "header": "0x21000001",
+          "offset": 10,
+          "value": "192.0.2.1"
+        },
+        {
+          "id": "0x000002",
+          "name": "user",
+          "type": "string",
+          "header": "0x21000002",
+          "offset": 24,
+          "value": "guest"
+        },
+        {
+          "id": "0x000003",
+          "name": "password",
+          "type": "string",
+          "header": "0x21000003",
+          "offset": 34,
+          "value": "synthetic-only"
+        },
+        {
+          "id": "0x000004",
+          "name": "legacy-comment",
+          "type": "string",
+          "header": "0x21000004",
+          "offset": 53,
+          "value": "legacy"
+        },
+        {
+          "id": "0x000008",
+          "name": "group",
+          "type": "string",
+          "header": "0x21000008",
+          "offset": 64,
+          "value": "Lab"
+        },
+        {
+          "id": "0x00000B",
+          "name": "romon-agent",
+          "type": "string",
+          "header": "0x2100000B",
+          "offset": 72,
+          "value": "agent"
+        },
+        {
+          "id": "0x00000C",
+          "name": "workspace",
+          "type": "string",
+          "header": "0x2100000C",
+          "offset": 82,
+          "value": "workspace"
+        },
+        {
+          "id": "0xFE0009",
+          "name": "comment",
+          "type": "string",
+          "header": "0x21FE0009",
+          "offset": 96,
+          "value": "Example text"
+        },
+        {
+          "id": "0x000007",
+          "name": "with-password",
+          "type": "bool",
+          "header": "0x01000007",
+          "offset": 113,
+          "value": true
+        },
+        {
+          "id": "0xFE0001",
+          "name": "id",
+          "type": "u32",
+          "header": "0x08FE0001",
+          "offset": 117,
+          "value": 7
+        },
+        {
+          "id": "0x000999",
+          "name": null,
+          "type": "string",
+          "header": "0x21000999",
+          "offset": 125,
+          "value": "first"
+        },
+        {
+          "id": "0x000999",
+          "name": null,
+          "type": "string",
+          "header": "0x21000999",
+          "offset": 135,
+          "value": "second"
+        },
+        {
+          "id": "0x000001",
+          "name": null,
+          "type": "string",
+          "header": "0x25000001",
+          "offset": 146,
+          "value": "bit26"
+        },
+        {
+          "id": "0x000002",
+          "name": "user",
+          "type": "string",
+          "header": "0x21000002",
+          "offset": 156,
+          "value": {
+            "hex": "ff"
+          }
+        },
+        {
+          "id": "0x000001",
+          "name": null,
+          "type": "u32",
+          "header": "0x09000001",
+          "offset": 162,
+          "value": 5
+        },
+        {
+          "id": "0x000002",
+          "name": null,
+          "type": "u64",
+          "header": "0x10000002",
+          "offset": 167,
+          "value": 18446744073709551615
+        },
+        {
+          "id": "0x000003",
+          "name": null,
+          "type": "addr6",
+          "header": "0x18000003",
+          "offset": 179,
+          "value": {
+            "hex": "000102030405060708090a0b0c0d0e0f"
+          }
+        },
+        {
+          "id": "0x000020",
+          "name": null,
+          "type": "message",
+          "header": "0x2B000020",
+          "offset": 199,
+          "value": [
+            {
+              "id": "0x000001",
+              "name": null,
+              "type": "string",
+              "header": "0x21000001",
+              "offset": 206,
+              "value": "nested (not an address)"
+            }
+          ]
+        },
+        {
+          "id": "0x000021",
+          "name": null,
+          "type": "raw",
+          "header": "0x32000021",
+          "offset": 234,
+          "value": {
+            "hex": "726177"
+          }
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "bool[]",
+          "header": "0x80000030",
+          "offset": 245,
+          "value": [
+            false,
+            true
+          ]
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "u32[]",
+          "header": "0x88000030",
+          "offset": 253,
+          "value": [
+            0,
+            4294967295
+          ]
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "u64[]",
+          "header": "0x90000030",
+          "offset": 267,
+          "value": [
+            0,
+            18446744073709551615
+          ]
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "addr6[]",
+          "header": "0x98000030",
+          "offset": 289,
+          "value": [
+            {
+              "hex": "000102030405060708090a0b0c0d0e0f"
+            },
+            {
+              "hex": "101112131415161718191a1b1c1d1e1f"
+            }
+          ]
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "string[]",
+          "header": "0xA0000030",
+          "offset": 327,
+          "value": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "message[]",
+          "header": "0xA8000030",
+          "offset": 339,
+          "value": [
+            [
+              {
+                "id": "0x000001",
+                "name": null,
+                "type": "string",
+                "header": "0x21000001",
+                "offset": 349,
+                "value": "nested (not an address)"
+              }
+            ],
+            []
+          ]
+        },
+        {
+          "id": "0x000030",
+          "name": null,
+          "type": "raw[]",
+          "header": "0xB0000030",
+          "offset": 379,
+          "value": [
+            {
+              "hex": "61"
+            },
+            {
+              "hex": "ff"
+            }
+          ]
+        },
+        {
+          "id": "0x000031",
+          "name": null,
+          "type": "string[]",
+          "header": "0xA3000031",
+          "offset": 391,
+          "value": [
+            "x",
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "offset": 409,
+      "message_size": 0,
+      "fields": []
+    },
+    {
+      "index": 2,
+      "offset": 413,
+      "message_size": 2,
+      "fields": []
+    }
+  ]
+}

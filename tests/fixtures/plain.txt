@@ -1,0 +1,31 @@
+WinBox CDB: 3 records; encryption=none
+record 0 offset=0x4 size=401
+  address (0x000001) [string] = "192.0.2.1"
+  user (0x000002) [string] = "guest"
+  password (0x000003) [string] = "synthetic-only"
+  legacy-comment (0x000004) [string] = "legacy"
+  group (0x000008) [string] = "Lab"
+  romon-agent (0x00000B) [string] = "agent"
+  workspace (0x00000C) [string] = "workspace"
+  comment (0xFE0009) [string] = "Example text"
+  with-password (0x000007) [bool] = true
+  id (0xFE0001) [u32] = 7
+  0x000999 [string] = "first"
+  0x000999 [string] = "second"
+  0x000001 [string] = "bit26"
+  user (0x000002) [string] = {"hex": "ff"}
+  0x000001 [u32] = 5
+  0x000002 [u64] = 18446744073709551615
+  0x000003 [addr6] = {"hex": "000102030405060708090a0b0c0d0e0f"}
+  0x000020 [message] = [{"id": "0x000001", "name": null, "type": "string", "header": "0x21000001", "offset": 206, "value": "nested (not an address)"}]
+  0x000021 [raw] = {"hex": "726177"}
+  0x000030 [bool[]] = [false, true]
+  0x000030 [u32[]] = [0, 4294967295]
+  0x000030 [u64[]] = [0, 18446744073709551615]
+  0x000030 [addr6[]] = [{"hex": "000102030405060708090a0b0c0d0e0f"}, {"hex": "101112131415161718191a1b1c1d1e1f"}]
+  0x000030 [string[]] = ["a", "b"]
+  0x000030 [message[]] = [[{"id": "0x000001", "name": null, "type": "string", "header": "0x21000001", "offset": 349, "value": "nested (not an address)"}], []]
+  0x000030 [raw[]] = [{"hex": "61"}, {"hex": "ff"}]
+  0x000031 [string[]] = ["x", "y"]
+record 1 offset=0x199 size=0
+record 2 offset=0x19d size=2
