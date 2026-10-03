@@ -1,0 +1,6 @@
+# Keep text fixtures and source files identical across platform checkouts.
+* text=auto eol=lf
+
+# Never apply newline conversion to binary assets or address books.
+*.png binary
+*.cdb binary
